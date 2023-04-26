@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.card-section{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 18px;
+}
+.card-section>img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
