@@ -7,15 +7,22 @@ const Card = ({ book }) => {
         <>
             {book.map((item) => {
               let thumbnail = item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.smallThumbnail
-                return (
-                    <>
-                        <div className="card-section">
-                            <img src={thumbnail} alt="" />
-                            <h1>Name</h1>
-                            <h3>$69</h3>
-                        </div>
-                    </>
-                );
+              let amount = item.saleInfo.listPrice && item.saleInfo.listPrice.amount;
+              let title = item.volumeInfo.title
+
+              if (thumbnail != undefined && amount != undefined)
+                {
+                  return (
+                      <>
+                          <div className="card-section">
+                              <img src={thumbnail} alt="" />
+                              <h1>{title}</h1>
+                              <h3>Rs. {amount}</h3>
+                          </div>
+                      </>
+                  );
+
+                }
             })}
         </>
     );
