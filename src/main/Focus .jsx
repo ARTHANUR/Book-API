@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
 
-const Focus = ({ show, item }) => {
+const Focus = ({ show, item  }) => {
     console.log(item);
     if (!show) {
         return null;
@@ -25,10 +25,12 @@ const Focus = ({ show, item }) => {
                             </button>
                         </div>
                     </div>
-                    <p>{description}</p>
+                    <div className="para">
+                      <p>{description}</p>
+                    </div>
                     <button className="btn btn-primary">
-                        {" "}
-                        <a href={buyLink}>Buy Now!!</a>{" "}
+                        
+                        <a href={buyLink}>Buy Now!!</a>
                     </button>
                 </div>
             </div>

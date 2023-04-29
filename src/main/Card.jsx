@@ -38,7 +38,7 @@ const Card = ({ book }) => {
                                 </div>
                             </div>
 
-                            <Focus show={show} item={bookItem} />
+                            <Focus show={show} item={bookItem}  />
                         </>
                     );
                 }
