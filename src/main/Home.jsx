@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from "./Card";
 import axios from "axios";
 import "./Card.css";
+import Focus from "./Focus ";
 
 const Home = () => {
     const [search, setSearch] = useState("");
